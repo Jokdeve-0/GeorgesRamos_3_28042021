@@ -1,0 +1,38 @@
+footer{
+    padding: 1em;
+    background:$color-txt-dark;
+    color: $color-txt-light;
+    & h2{
+        @include family('title');
+        font-weight: 500;
+        margin: 0;
+        letter-spacing: 1px;
+        /*@media(min-width:$breakpoint-tablet){
+            text-align: center;
+        }*/
+    }
+    & ul{
+        list-style: none;
+        padding-left: 0;
+        font-size: .7em;
+        /*@media(min-width:$breakpoint-tablet){
+            @include flex-mix(center,center);
+        }*/
+    }
+    & li{
+        @include flex-mix(start,center);
+        height:35px;
+        /*@media(min-width:$breakpoint-tablet){
+            margin-right:2em;
+        }*/
+        & img{
+            width:20px;
+            margin-right: .8em;
+        }
+        & a{
+            color: lighten($color-txt-light,100%);
+            text-decoration: none;
+        }
+
+    }
+}

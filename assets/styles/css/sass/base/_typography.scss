@@ -1,0 +1,26 @@
+body {
+    @include family('regular');
+    color: $color-txt-dark;
+    line-height: 1.2;
+}
+
+h1 {
+    @include family('medium');
+    font-size: 1.6em;
+}
+h2 {
+    @include family('medium');
+    font-size: 1.1em;
+}
+
+
+p,
+span{
+    @include family('light');
+    font-size: 1em; 
+}
+
+button {
+    @include family('medium');
+    font-size: 0.8em;
+}
