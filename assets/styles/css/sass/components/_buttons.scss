@@ -11,6 +11,8 @@
         transition: all 0.5s ease-in-out;
         @include shadow;
         color: #fff;
+        text-decoration: none;
+        font-family: "regular";
         &.primary:active {
             
             @media (max-width: $breakpoint-tablet-max) {
@@ -26,10 +28,6 @@
                 @include shadow-hover;
             }
             
-        }
-        & a{
-            color: #fff;
-            text-decoration: none;
         }
     }
 }
