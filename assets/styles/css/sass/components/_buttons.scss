@@ -15,7 +15,7 @@
             color: #fff;
             text-decoration: none;
         }
-        & .--primary:active {
+        & .primary:active {
 
             @media (max-width: $breakpoint-tablet-max) {
                 background: $btn-primary_hover;
