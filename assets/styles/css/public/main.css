@@ -178,9 +178,6 @@ button {
     transition: all 0.5s ease-in-out;
     box-shadow: 0px 2px 10px #979797;
     color: #fff; }
-    .divBtn > .btn a {
-      color: #fff;
-      text-decoration: none; }
     @media (max-width: 1023px) {
       .divBtn > .btn .primary:active {
         background: linear-gradient(to top left, #a16be0, #ff93e1);
@@ -188,7 +185,11 @@ button {
     @media (min-width: 1024px) {
       .divBtn > .btn .primary:hover {
         background: linear-gradient(to top left, #a16be0, #ff93e1);
+        font-size: 50px;
         box-shadow: 0px 2px 10px #525252; } }
+    .divBtn > .btn a {
+      color: #fff;
+      text-decoration: none; }
 
 header .__logo {
   display: flex;
