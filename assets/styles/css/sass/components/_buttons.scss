@@ -16,16 +16,20 @@
             text-decoration: none;
         }
         &.--primary:active {
+
             @media (max-width: $breakpoint-tablet-max) {
                 background: $btn-primary_hover;
                 @include shadow-hover;
             }
+            
         }
         &.--primary:hover {
+
             @media (min-width: $breakpoint-desktop) {
                 background: $btn-primary_hover;
                 @include shadow-hover;
             }
+
         }
     }
 }

@@ -476,25 +476,16 @@ footer {
     font-family: "title", sans-serif;
     font-weight: 500;
     margin: 0;
-    letter-spacing: 1px;
-    /*@media(min-width:$breakpoint-tablet){
-        text-align: center;
-    }*/ }
+    letter-spacing: 1px; }
   footer ul {
     list-style: none;
     padding-left: 0;
-    font-size: .7em;
-    /*@media(min-width:$breakpoint-tablet){
-        @include flex-mix(center,center);
-    }*/ }
+    font-size: .7em; }
   footer li {
     display: flex;
     justify-content: start;
     align-items: center;
-    height: 35px;
-    /*@media(min-width:$breakpoint-tablet){
-        margin-right:2em;
-    }*/ }
+    height: 35px; }
     footer li img {
       width: 20px;
       margin-right: .8em; }
