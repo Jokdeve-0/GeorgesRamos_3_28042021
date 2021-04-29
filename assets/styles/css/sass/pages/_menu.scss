@@ -55,6 +55,8 @@
 }
 
 .ctr-menu {
+    background-size: 100%;
+    background-repeat: repeat;
     &.--bg1 {
         background-image: url('../../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
     }
@@ -70,26 +72,10 @@
     &.--bg4 {
         background-image: url('../../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
     }
-    background-size: 100%;
-    background-repeat: repeat;
-   
-    // @media(min-width:$breakpoint-mobile-xl){
-    //     background: no-repeat top/60%;
-    // }
-    @media(min-width:$breakpoint-tablet){
-        //background: no-repeat top/50%;
-    }
-    @media(min-width:$breakpoint-desktop){
-        //background-size:350px;
-        //background-repeat: repeat;
-    }
 }
 .move_cat{
     width:100%;
     background: $color-txt-light;
-    @media (min-width: $breakpoint-desktop){
-        //@include flex-mix(center, baseline);
-    }
 }
 .categorie {
     width: 100%;
