@@ -509,19 +509,19 @@ footer {
   @media (min-width: 1400px) {
     .ctr-menu {
       width: 50%; } }
-  .ctr-menu .bg1 {
+  .ctr-menu.bg1 {
     background-image: url("../../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: 100%;
     background-repeat: repeat; }
-  .ctr-menu .bg2 {
+  .ctr-menu.bg2 {
     background-image: url("../../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-size: 100%;
     background-repeat: repeat; }
-  .ctr-menu .bg3 {
+  .ctr-menu.bg3 {
     background-image: url("../../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-size: 100%;
     background-repeat: repeat; }
-  .ctr-menu .bg4 {
+  .ctr-menu.bg4 {
     background-image: url("../../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     background-size: 100%;
     background-repeat: repeat; }
