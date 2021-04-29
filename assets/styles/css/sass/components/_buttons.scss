@@ -23,7 +23,7 @@
             }
             
         }
-        & .--primary:hover {
+        & .primary:hover {
 
             @media (min-width: $breakpoint-desktop) {
                 background: $btn-primary_hover;
