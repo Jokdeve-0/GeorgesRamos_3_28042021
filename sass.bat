@@ -1,1 +1,0 @@
-sass --watch assets\styles\css\sass\main.scss:assets\styles\css\public\main.css

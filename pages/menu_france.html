@@ -6,40 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - OhMyFood</title>
-    <link rel="stylesheet" href="../styles/css/public/main.css">
+    <link rel="stylesheet" href="../assets/styles/css/public/main.css">
+    <link rel="icon" href="../assets/images/logo/favicon.ico" />
 </head>
 
 <body>
-    <header>
-        <div class="__logo">
-            <a href="../../index.html"><img class="__return" src="../images/icones/fleche.svg" alt="retour"></a>
-            <img src="../images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
-            <ul>
-                <li>
-                    <p><a href="#">Mon compte</a></p>
-                </li>
-                <li>
-                    <p><a href="#">Mes favoris</a></p>
-                </li>
-                <li>
-                    <p><a href="#">Mes commandes</a></p>
-                </li>
-            </ul>
+    <header class="__logo">
+        <a href="../../index.html"><img class="__return" src="../assets/images/icones/fleche.svg" alt="retour"></a>
+        <div class="navoff">
+            <img src="../assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
+            <nav>
+                <a href="#">Mon compte</a>
+                <a href="#">Mes favoris</a>
+                <a href="#">Mes commandes</a>
+            </nav>
         </div>
     </header>
     <div class="ctr-menu bg3">
-        <div class="card__menu">
+        <figure class="cont_image-xl">
+            <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo de plats">
+        </figure>
+        <section class="card__menu">
             <div class="card__menu__titre">
-                <h2>À la française</h2>
+                <h1>À la française</h1>
             </div>
             <div class="card__desc__favoris">
                 <input type="checkbox" class="like" id="like_1">
                 <label class="colorHeart" for="like_1">
-                    <img src="../images/icones/coeur.png" alt="no-color">
-                    <img src="../images/icones/coeur-col.png" alt="color">
+                    <img src="../assets/images/icones/coeur.png" alt="no-color">
+                    <img src="../assets/images/icones/coeur-col.png" alt="color">
                 </label>
             </div>
-        </div>
+        </section>
         <div class="move_cat">
             <div class="categorie">
                 <p>ENTRÉES</p>
@@ -48,7 +46,7 @@
                     <span>25€</span>
                     <input type="checkbox" class="items" id="item_1" name="item_1">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
                 <div class="__plat">
@@ -56,7 +54,7 @@
                     <span>35€</span>
                     <input type="checkbox" class="items" id="item_2" name="item_2">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
                 <div class="__plat">
@@ -64,7 +62,7 @@
                     <span>20€</span>
                     <input type="checkbox" class="items" id="item_3" name="item_3">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
             </div>
@@ -76,7 +74,7 @@
                     <span>40€</span>
                     <input type="checkbox" class="items" id="item_4" name="item_4">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
                 <div class="__plat">
@@ -84,7 +82,7 @@
                     <span>35€</span>
                     <input type="checkbox" class="items" id="item_5" name="item_5">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
                 <div class="__plat">
@@ -93,7 +91,7 @@
                     <span>44€</span>
                     <input type="checkbox" class="items" id="item_6" name="item_6">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
             </div>
@@ -104,7 +102,7 @@
                     <span>18€</span>
                     <input type="checkbox" class="items" id="item_7" name="item_7">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
                 <div class="__plat">
@@ -112,7 +110,7 @@
                     <span>22€</span>
                     <input type="checkbox" class="items" id="item_8" name="item_8">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
                 <div class="__plat">
@@ -120,7 +118,7 @@
                     <span>23€</span>
                     <input type="checkbox" class="items" id="item_9" name="item_9">
                     <div class="hide">
-                        <img src="../images/icones/check.svg" alt="check">
+                        <img src="../assets/images/icones/check.svg" alt="check">
                     </div>
                 </div>
             </div>
@@ -133,11 +131,11 @@
         <h2 id="footer">ohmyfood</h2>
         <ul>
             <li>
-                <img src="../images/icones/couverts.svg" alt="restaurants">
+                <img src="../assets/images/icones/couverts.svg" alt="restaurants">
                 <p><a href="#">Proposer un restaurant</a></p>
             </li>
             <li>
-                <img src="../images/icones/partenaire.svg" alt="Partenaire">
+                <img src="../assets/images/icones/partenaire.svg" alt="Partenaire">
                 <p><a href="#">Devenir partenaire</a></p>
             </li>
             <li>

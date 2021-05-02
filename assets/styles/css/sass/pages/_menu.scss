@@ -38,6 +38,7 @@
     }
     & .cont_image-xl {
         display:none;
+        margin: 0;
         background: rgba(255,255,255,0.5);
         width:100%;
         @media(min-width:$breakpoint-mobile-xl){
@@ -63,13 +64,14 @@
         &__titre {
             width: 80%;
 
-            & h2 {
+            & h1 {
                 @include margin-y(2em, 1em);
+                font-size:1.2em;
                 padding-left: 1.5em;
                 @include family('title');
                 font-weight: 400;
                 @media (min-width: $breakpoint-tablet){
-                    font-size:2em;
+                    font-size:1.6em;
                 }
 
             }

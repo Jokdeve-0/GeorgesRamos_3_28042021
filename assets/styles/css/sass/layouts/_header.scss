@@ -1,71 +1,87 @@
-header{
-    & .__logo{
-        @include flex-mix(center,center);
-        @include shadow;
-        position: relative;
-        z-index:10;
-        height:40px;
-        @media (min-width:$breakpoint-mobile-xl){
-            padding-right: 2em;
-            height:50px;
-        }        
-        @media (min-width:$breakpoint-tablet){
-            height:60px;
+.__logo {
+    @include flex-mix(center, center);
+    @include shadow;
+    position: relative;
+    z-index: 10;
+    height: 40px;
+
+    @media (min-width:$breakpoint-mobile-xl) {
+        padding-right: 2em;
+        height: 50px;
+    }
+
+    @media (min-width:$breakpoint-tablet) {
+        height: 60px;
+    }
+
+    @media (min-width:$breakpoint-desktop) {
+        @include flex-mix(space-between, center);
+    }
+
+    & .__return {
+        @include taille(20px, 20px);
+        transform: scaleX(-1);
+        position: absolute;
+        z-index: 2;
+        left: 15px;
+        top: 10px;
+
+        @media (min-width:$breakpoint-mobile-xl) {
+            @include taille(25px, 25px);
+            left: 15px;
+            top: 14px;
         }
-        @media (min-width:$breakpoint-desktop){
-            @include flex-mix(space-between,center);
+
+        @media (min-width:$breakpoint-tablet) {
+            @include taille(30px, 30px);
+            left: 15px;
+            top: 15px;
         }
-        & .__return{
-            @include taille(20px,20px);
-            transform:scaleX(-1);
-            position:absolute;
-            left:15px;
-            top : 10px;
-            @media (min-width:$breakpoint-mobile-xl){
-                @include taille(25px,25px);
-                left:15px;
-                top : 14px;
-            }
-            @media (min-width:$breakpoint-tablet){
-                @include taille(30px,30px);
-                left:15px;
-                top : 15px;
-            }
+    }
+    & .navoff{
+        @include flex-mix(center, center);
+        position: absolute;
+        @media(min-width:$breakpoint-desktop) {
+            @include flex-mix(space-between, center);
+            width:100%;
         }
-        & img{
-            width: 40%;
-            @media (min-width:$breakpoint-mobile){
-                width: 30%;
-            }
-            @media (min-width:$breakpoint-mobile-xl){
-                width: 25%;
-            }
-            @media (min-width:$breakpoint-tablet){
-                width: 20%;
-            }
-            @media (min-width:$breakpoint-desktop){
-                padding-left: 80px;
-                width: 15%;
-            }
+    }
+
+    & img {
+        width: 50%;
+        @media (min-width:$breakpoint-mobile-xl) {
+            width: 60%;
         }
-        & ul{
-            display:none;
-            list-style: none;
-            font-size: .85em;
-            @media(min-width:$breakpoint-desktop){
-                @include flex-mix(center,center);
-            }
+
+        @media (min-width:$breakpoint-tablet) {
+            width: 80%;
         }
-        & li{
-            @media(min-width:$breakpoint-desktop){
-                margin-right:2em;
-            }
+
+        @media (min-width:$breakpoint-desktop) {
+            padding-left: 80px;
+            width: 15%;
         }
-        & a{
-            color: $color-txt-dark;
-            text-decoration: none;
-            @include family('title');
-            font-weight: 500;
+    }
+
+    & nav {
+        display: none;
+        list-style: none;
+        font-size: .85em;
+
+        @media(min-width:$breakpoint-desktop) {
+            @include flex-mix(center, center);
+        }
+    }
+
+    & a {
+        color: $color-txt-dark;
+        text-decoration: none;
+        margin-right: 2em;
+        @include family('title');
+        font-weight: 500;
+
+        &:hover {
+            color: $color-primary;
         }
     }
 }

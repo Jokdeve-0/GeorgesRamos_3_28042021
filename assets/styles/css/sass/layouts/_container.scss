@@ -18,7 +18,7 @@
 
 .fonct{
     padding-bottom: 2em;
-    & h1{
+    & h2{
         padding-left: .8em;
         @media (min-width:$breakpoint-tablet){
             width:100%;
@@ -84,8 +84,9 @@
 #restos {
     @include padding-y(1em,1em);
     background: $color-txt-light;
-    &>h1{
+    &>h2{
         padding-left: 0.8em;
+        font-size:1.6em;
         @media (min-width:$breakpoint-tablet){
             text-align: center;
         }
@@ -154,12 +155,13 @@
         @include flex-mix(center,flex-start);
         height: 75%;
         width: 100%;
-        & h2{
+        & p{
             width:100%;
             text-align:end;
             padding: 1.5em;
             margin: 0;
             font-size:.8em;
+            font-weight: bold;
         }
         & span {
             padding: 0.5em 1.5em;
@@ -176,7 +178,7 @@
         height: 25%;
         &__titre {
             width: 90%;
-            & h2 {
+            & h3 {
                 @include margin-y(5px, 0);
             }
             & p {

@@ -7,46 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - OhMyFood</title>
     <link rel="stylesheet" href="assets/styles/css/public/main.css">
+    <link rel="icon" href="assets/images/logo/favicon.ico">
 </head>
 
 <body id="home">
 
-    <div id="spin">
+    <section id="spin">
         <img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo">
         <img src="assets/images/icones/loader.svg" alt="Chargement">
         <p>Chargement ... Veuillez patienter </p>
-    </div>
+    </section>
 
-    <div id="main">
-        <header>
-            <div class="__logo">
-                <img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
-                <ul>
-                    <li>
-                        <p><a href="#">Mon compte</a></p>
-                    </li>
-                    <li>
-                        <p><a href="#">Mes favoris</a></p>
-                    </li>
-                    <li>
-                        <p><a href="#">Mes commandes</a></p>
-                    </li>
-                </ul>
-            </div>
+    <main id="main">
+
+        <header class="__logo">
+            <img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
+            <nav>
+                <a href="#">Mon compte</a>
+                <a href="#">Mes favoris</a>
+                <a href="#">Mes commandes</a>
+            </nav>
         </header>
+
         <div class="location">
             <img src="assets/images/icones/location.svg" alt="Location">
             <p id="local">Paris, Belleville</p>
         </div>
-        <div class="title">
+
+        <section class="title">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <span class="divBtn">
                 <a class="btn primary" href="#restos">Explorer nos restaurants</a>
             </span>
-        </div>
-        <div class="fonct">
-            <h1>Fonctionnement</h1>
+        </section>
+
+        <section class="fonct">
+            <h2>Fonctionnement</h2>
             <div class="fonct__container">
                 <span>1</span><img src="assets/images/icones/phone.svg" alt="phone">
                 <p>Choissiez un restaurant</p>
@@ -59,19 +56,20 @@
                 <span>3</span><img src="assets/images/icones/shop-color.svg" alt="resto">
                 <p>Dégustez au restaurant</p>
             </div>
-        </div>
-        <div id="restos">
-            <h1>Restaurants</h1>
+        </section>
+
+        <section id="restos">
+            <h2>Restaurants</h2>
             <div class="container-card">
                 <div class="card">
-                    <a href="assets/pages/menu_palette.html">
+                    <a href="pages/menu_palette.html">
                         <div class="card__top">
-                            <h2><span>Nouveau</span></h2>
+                            <p><span>Nouveau</span></p>
                         </div>
                     </a>
                     <div class="card__desc">
                         <div class="card__desc__titre">
-                            <h2>La palette du goût</h2>
+                            <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>
                         </div>
                         <div class="card__desc__favoris">
@@ -84,14 +82,14 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="assets/pages/menu_note.html">
+                    <a href="pages/menu_note.html">
                         <div class="card__top">
-                            <h2><span>Nouveau</span></h2>
+                            <p><span>Nouveau</span></p>
                         </div>
                     </a>
                     <div class="card__desc">
                         <div class="card__desc__titre">
-                            <h2>La note enchantée</h2>
+                            <h3>La note enchantée</h3>
                             <p>Charonne</p>
                         </div>
                         <div class="card__desc__favoris">
@@ -104,12 +102,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="assets/pages/menu_france.html">
+                    <a href="pages/menu_france.html">
                         <div class="card__top"></div>
                     </a>
                     <div class="card__desc">
                         <div class="card__desc__titre">
-                            <h2>À la française</h2>
+                            <h3>À la française</h3>
                             <p>Cité Rouge</p>
                         </div>
                         <div class="card__desc__favoris">
@@ -122,12 +120,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="assets/pages/menu_delice.html">
+                    <a href="pages/menu_delice.html">
                         <div class="card__top"></div>
                     </a>
                     <div class="card__desc">
                         <div class="card__desc__titre">
-                            <h2>Le délice des sens</h2>
+                            <h3>Le délice des sens</h3>
                             <p>Folie-Méricourt</p>
                         </div>
                         <div class="card__desc__favoris">
@@ -140,7 +138,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <footer>
             <h2 id="footer">ohmyfood</h2>
             <ul>
@@ -163,7 +162,7 @@
             </div>
         </footer>
 
-    </div>
+    </main>
 
 </body>
 
