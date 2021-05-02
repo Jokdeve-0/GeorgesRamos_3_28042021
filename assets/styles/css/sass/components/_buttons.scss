@@ -11,21 +11,23 @@
         transition: all 0.5s ease-in-out;
         @include shadow;
         color: #fff;
-        & a{
-            color: #fff;
-            text-decoration: none;
-        }
-        &.--primary:active {
+        text-decoration: none;
+        font-family: "regular";
+        &.primary:active {
+            
             @media (max-width: $breakpoint-tablet-max) {
                 background: $btn-primary_hover;
                 @include shadow-hover;
             }
+            
         }
-        &.--primary:hover {
+        &.primary:hover {
+            
             @media (min-width: $breakpoint-desktop) {
                 background: $btn-primary_hover;
                 @include shadow-hover;
             }
+            
         }
     }
 }

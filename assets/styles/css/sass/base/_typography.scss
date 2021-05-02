@@ -4,11 +4,11 @@ body {
     line-height: 1.2;
 }
 
-h1 {
+h1,h2 {
     @include family('medium');
     font-size: 1.6em;
 }
-h2 {
+h3 {
     @include family('medium');
     font-size: 1.1em;
 }

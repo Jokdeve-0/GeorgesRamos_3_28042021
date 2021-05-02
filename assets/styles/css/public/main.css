@@ -50,49 +50,8 @@
 @keyframes spin {
   0% {
     transform: rotate(0deg); }
-  5% {
-    transform: rotate(18deg); }
-  10% {
-    transform: rotate(36deg); }
-  15% {
-    transform: rotate(54deg); }
-  20% {
-    transform: rotate(72deg); }
-  25% {
-    transform: rotate(90deg); }
-  30% {
-    transform: rotate(108deg); }
-  35% {
-    transform: rotate(126deg); }
-  40% {
-    transform: rotate(144deg); }
-  45% {
-    transform: rotate(162deg); }
-  50% {
-    transform: rotate(180deg); }
-  55% {
-    transform: rotate(198deg); }
-  60% {
-    transform: rotate(216deg); }
-  65% {
-    transform: rotate(234deg); }
-  70% {
-    transform: rotate(252deg); }
-  75% {
-    transform: rotate(270deg); }
-  80% {
-    transform: rotate(288deg); }
-  85% {
-    transform: rotate(306deg); }
-  90% {
-    transform: rotate(324deg);
-    opacity: 1; }
-  95% {
-    transform: rotate(342deg); }
   100% {
-    transform: rotate(360deg);
-    opacity: 0;
-    visibility: hidden; } }
+    transform: rotate(720deg); } }
 @keyframes openBody {
   0% {
     overflow: hidden; }
@@ -110,11 +69,11 @@ body {
   color: #2A2A2A;
   line-height: 1.2; }
 
-h1 {
+h1, h2 {
   font-family: "medium", sans-serif;
   font-size: 1.6em; }
 
-h2 {
+h3 {
   font-family: "medium", sans-serif;
   font-size: 1.1em; }
 
@@ -140,12 +99,10 @@ button {
   animation: spindiv 3s ease-in-out forwards; }
   #spin img:nth-child(1) {
     width: 60%;
-    opacity: 1;
-    margin-top: 3em; }
+    opacity: 1; }
     @media (min-width: 576px) {
       #spin img:nth-child(1) {
-        width: 30%;
-        margin-top: 2em; } }
+        width: 30%; } }
     @media (min-width: 768px) {
       #spin img:nth-child(1) {
         width: 25%; } }
@@ -154,7 +111,7 @@ button {
         width: 20%; } }
   #spin img:nth-child(2) {
     max-width: 30%;
-    animation: spin 3s ease-in-out forwards; }
+    animation: spin 6s infinite; }
     @media (min-width: 576px) {
       #spin img:nth-child(2) {
         width: 20%; } }
@@ -177,20 +134,19 @@ button {
     background: linear-gradient(to top left, #9356DC, #FF79DA);
     transition: all 0.5s ease-in-out;
     box-shadow: 0px 2px 10px #979797;
-    color: #fff; }
-    .divBtn > .btn a {
-      color: #fff;
-      text-decoration: none; }
+    color: #fff;
+    text-decoration: none;
+    font-family: "regular"; }
     @media (max-width: 1023px) {
-      .divBtn > .btn.--primary:active {
+      .divBtn > .btn.primary:active {
         background: linear-gradient(to top left, #a16be0, #ff93e1);
         box-shadow: 0px 2px 10px #525252; } }
     @media (min-width: 1024px) {
-      .divBtn > .btn.--primary:hover {
+      .divBtn > .btn.primary:hover {
         background: linear-gradient(to top left, #a16be0, #ff93e1);
         box-shadow: 0px 2px 10px #525252; } }
 
-header .__logo {
+.__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,68 +155,77 @@ header .__logo {
   z-index: 10;
   height: 40px; }
   @media (min-width: 576px) {
-    header .__logo {
+    .__logo {
       padding-right: 2em;
       height: 50px; } }
   @media (min-width: 768px) {
-    header .__logo {
+    .__logo {
       height: 60px; } }
   @media (min-width: 1024px) {
-    header .__logo {
+    .__logo {
       display: flex;
       justify-content: space-between;
       align-items: center; } }
-  header .__logo .__return {
+  .__logo .__return {
     width: 20px;
     height: 20px;
     transform: scaleX(-1);
     position: absolute;
+    z-index: 2;
     left: 15px;
     top: 10px; }
     @media (min-width: 576px) {
-      header .__logo .__return {
+      .__logo .__return {
         width: 25px;
         height: 25px;
         left: 15px;
         top: 14px; } }
     @media (min-width: 768px) {
-      header .__logo .__return {
+      .__logo .__return {
         width: 30px;
         height: 30px;
         left: 15px;
         top: 15px; } }
-  header .__logo img {
-    width: 40%; }
-    @media (min-width: 410px) {
-      header .__logo img {
-        width: 30%; } }
-    @media (min-width: 576px) {
-      header .__logo img {
-        width: 25%; } }
-    @media (min-width: 768px) {
-      header .__logo img {
-        width: 20%; } }
+  .__logo .navoff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; }
     @media (min-width: 1024px) {
-      header .__logo img {
+      .__logo .navoff {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; } }
+  .__logo img {
+    width: 50%; }
+    @media (min-width: 576px) {
+      .__logo img {
+        width: 60%; } }
+    @media (min-width: 768px) {
+      .__logo img {
+        width: 80%; } }
+    @media (min-width: 1024px) {
+      .__logo img {
         padding-left: 80px;
         width: 15%; } }
-  header .__logo ul {
+  .__logo nav {
     display: none;
     list-style: none;
     font-size: .85em; }
     @media (min-width: 1024px) {
-      header .__logo ul {
+      .__logo nav {
         display: flex;
         justify-content: center;
         align-items: center; } }
-  @media (min-width: 1024px) {
-    header .__logo li {
-      margin-right: 2em; } }
-  header .__logo a {
+  .__logo a {
     color: #2A2A2A;
     text-decoration: none;
+    margin-right: 2em;
     font-family: "title", sans-serif;
     font-weight: 500; }
+    .__logo a:hover {
+      color: #9356DC; }
 
 .location {
   display: flex;
@@ -282,10 +247,10 @@ header .__logo {
 
 .fonct {
   padding-bottom: 2em; }
-  .fonct h1 {
+  .fonct h2 {
     padding-left: .8em; }
     @media (min-width: 768px) {
-      .fonct h1 {
+      .fonct h2 {
         width: 100%;
         text-align: center; } }
   .fonct__container {
@@ -343,10 +308,11 @@ header .__logo {
   padding-top: 1em;
   padding-bottom: 1em;
   background: #f3f3f3; }
-  #restos > h1 {
-    padding-left: 0.8em; }
+  #restos > h2 {
+    padding-left: 0.8em;
+    font-size: 1.6em; }
     @media (min-width: 768px) {
-      #restos > h1 {
+      #restos > h2 {
         text-align: center; } }
   #restos .card:nth-child(1) .card__top {
     background-image: url("../../../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -414,12 +380,13 @@ header .__logo {
     align-items: flex-start;
     height: 75%;
     width: 100%; }
-    .card__top h2 {
+    .card__top p {
       width: 100%;
       text-align: end;
       padding: 1.5em;
       margin: 0;
-      font-size: .8em; }
+      font-size: .8em;
+      font-weight: bold; }
     .card__top span {
       padding: 0.5em 1.5em;
       color: #278870;
@@ -433,7 +400,7 @@ header .__logo {
     height: 25%; }
     .card__desc__titre {
       width: 90%; }
-      .card__desc__titre h2 {
+      .card__desc__titre h3 {
         margin-top: 5px;
         margin-bottom: 0; }
       .card__desc__titre p {
@@ -476,25 +443,16 @@ footer {
     font-family: "title", sans-serif;
     font-weight: 500;
     margin: 0;
-    letter-spacing: 1px;
-    /*@media(min-width:$breakpoint-tablet){
-        text-align: center;
-    }*/ }
+    letter-spacing: 1px; }
   footer ul {
     list-style: none;
     padding-left: 0;
-    font-size: .7em;
-    /*@media(min-width:$breakpoint-tablet){
-        @include flex-mix(center,center);
-    }*/ }
+    font-size: .7em; }
   footer li {
     display: flex;
     justify-content: start;
     align-items: center;
-    height: 35px;
-    /*@media(min-width:$breakpoint-tablet){
-        margin-right:2em;
-    }*/ }
+    height: 35px; }
     footer li img {
       width: 20px;
       margin-right: .8em; }
@@ -519,8 +477,25 @@ footer {
   @media (min-width: 1400px) {
     .ctr-menu {
       width: 50%; } }
+  .ctr-menu.bg1 {
+    background-image: url("../../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: repeat; }
+  .ctr-menu.bg2 {
+    background-image: url("../../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: repeat; }
+  .ctr-menu.bg3 {
+    background-image: url("../../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: repeat; }
+  .ctr-menu.bg4 {
+    background-image: url("../../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: repeat; }
   .ctr-menu .cont_image-xl {
     display: none;
+    margin: 0;
     background: rgba(255, 255, 255, 0.5);
     width: 100%; }
     @media (min-width: 576px) {
@@ -547,27 +522,16 @@ footer {
         margin-top: -40px; } }
     .ctr-menu .card__menu__titre {
       width: 80%; }
-      .ctr-menu .card__menu__titre h2 {
+      .ctr-menu .card__menu__titre h1 {
         margin-top: 2em;
         margin-bottom: 1em;
+        font-size: 1.2em;
         padding-left: 1.5em;
         font-family: "title", sans-serif;
         font-weight: 400; }
         @media (min-width: 768px) {
-          .ctr-menu .card__menu__titre h2 {
-            font-size: 2em; } }
-
-.ctr-menu {
-  background-size: 100%;
-  background-repeat: repeat; }
-  .ctr-menu.--bg1 {
-    background-image: url("../../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"); }
-  .ctr-menu.--bg2 {
-    background-image: url("../../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"); }
-  .ctr-menu.--bg3 {
-    background-image: url("../../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"); }
-  .ctr-menu.--bg4 {
-    background-image: url("../../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"); }
+          .ctr-menu .card__menu__titre h1 {
+            font-size: 1.6em; } }
 
 .move_cat {
   width: 100%;

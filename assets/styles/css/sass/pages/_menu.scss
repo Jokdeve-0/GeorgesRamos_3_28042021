@@ -13,8 +13,32 @@
     @media(min-width:$breakpoint-desktop-xl){
         width:50%;
     }
+    &.bg1 {
+        background-image: url('../../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+
+    &.bg2 {
+        background-image: url('../../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+
+    &.bg3 {
+        background-image: url('../../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+
+    &.bg4 {
+        background-image: url('../../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+        background-size: 100%;
+        background-repeat: repeat;
+    }
     & .cont_image-xl {
         display:none;
+        margin: 0;
         background: rgba(255,255,255,0.5);
         width:100%;
         @media(min-width:$breakpoint-mobile-xl){
@@ -40,13 +64,14 @@
         &__titre {
             width: 80%;
 
-            & h2 {
+            & h1 {
                 @include margin-y(2em, 1em);
+                font-size:1.2em;
                 padding-left: 1.5em;
                 @include family('title');
                 font-weight: 400;
                 @media (min-width: $breakpoint-tablet){
-                    font-size:2em;
+                    font-size:1.6em;
                 }
 
             }
@@ -54,42 +79,9 @@
     }
 }
 
-.ctr-menu {
-    &.--bg1 {
-        background-image: url('../../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
-    }
-
-    &.--bg2 {
-        background-image: url('../../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
-    }
-
-    &.--bg3 {
-        background-image: url('../../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
-    }
-
-    &.--bg4 {
-        background-image: url('../../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
-    }
-    background-size: 100%;
-    background-repeat: repeat;
-   
-    // @media(min-width:$breakpoint-mobile-xl){
-    //     background: no-repeat top/60%;
-    // }
-    @media(min-width:$breakpoint-tablet){
-        //background: no-repeat top/50%;
-    }
-    @media(min-width:$breakpoint-desktop){
-        //background-size:350px;
-        //background-repeat: repeat;
-    }
-}
 .move_cat{
     width:100%;
     background: $color-txt-light;
-    @media (min-width: $breakpoint-desktop){
-        //@include flex-mix(center, baseline);
-    }
 }
 .categorie {
     width: 100%;

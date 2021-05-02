@@ -10,10 +10,8 @@
     & img:nth-child(1){
         width:60%;
         opacity:1;
-        margin-top: 3em;
         @media (min-width: $breakpoint-mobile-xl) {
             width:30%;
-            margin-top: 2em;
         }
         @media (min-width: $breakpoint-tablet) {
             width:25%;
@@ -24,13 +22,12 @@
     }
     & img:nth-child(2){ 
         max-width:30%;
-        animation: spin 3s ease-in-out forwards;
+        animation: spin 6s infinite;
         @media (min-width: $breakpoint-mobile-xl) {
             width:20%; 
         }
         @media (min-width: $breakpoint-tablet) {
             width:10%;
         }
-
     }
 } 
