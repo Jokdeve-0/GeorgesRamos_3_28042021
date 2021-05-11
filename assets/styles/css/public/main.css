@@ -579,7 +579,8 @@ footer {
     padding: 1em;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    cursor: pointer; }
     .__plat label span {
       font-size: .9em; }
   .__plat img {
