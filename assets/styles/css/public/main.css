@@ -609,12 +609,12 @@ footer {
   border-bottom-right-radius: 25px;
   margin-right: -2px; }
 
-@media (max-width: 1024px) {
-  .items:checked + .hide {
-    animation: selection 1.5s ease-in-out forwards; }
+.items:checked + .hide {
+  animation: selection 1.5s ease-in-out forwards; }
 
-  .items:checked + .hide img {
-    animation: selection_img 1s .5s forwards; } }
+.items:checked + .hide img {
+  animation: selection_img 1s .5s forwards; }
+
 @media (min-width: 1024px) {
   .items:hover + .hide {
     animation: selection 1.5s ease-in-out forwards; }
