@@ -220,10 +220,8 @@
             & .like:checked+.colorHeart {
                 
                 & img:last-child {
-                    @media (max-width: $breakpoint-tablet-max){
-                        font-weight: bold;
-                        transform: scale(1);
-                    }
+                    font-weight: bold;
+                    transform: scale(1);
                 }
             }
             

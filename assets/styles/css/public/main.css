@@ -430,10 +430,9 @@ button {
       .card__desc__favoris .like {
         position: absolute;
         visibility: hidden; }
-      @media (max-width: 1023px) {
-        .card__desc__favoris .like:checked + .colorHeart img:last-child {
-          font-weight: bold;
-          transform: scale(1); } }
+      .card__desc__favoris .like:checked + .colorHeart img:last-child {
+        font-weight: bold;
+        transform: scale(1); }
 
 footer {
   padding: 1em;
