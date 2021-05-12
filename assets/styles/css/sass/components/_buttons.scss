@@ -4,30 +4,22 @@
     background: $color-txt-light;
     width:100%;
     &>.btn{
+        @include shadow;
+        @include family("regular",1em);
+        text-decoration: none;
+        color: #fff;
+        background: $btn-primary;
         padding:1em 3em;
         border: none;
         border-radius:25px;
-        background: $btn-primary;
         transition: all 0.5s ease-in-out;
-        @include shadow;
-        color: #fff;
-        text-decoration: none;
-        font-family: "regular";
         &.primary:active {
-            
-            @media (max-width: $breakpoint-tablet-max) {
-                background: $btn-primary_hover;
-                @include shadow-hover;
-            }
-            
+            @include btn-act();
         }
         &.primary:hover {
-            
-            @media (min-width: $breakpoint-desktop) {
-                background: $btn-primary_hover;
-                @include shadow-hover;
-            }
-            
+            @media (min-width: $breakpoint-desktop){
+                @include btn-act();
+            } 
         }
     }
 }

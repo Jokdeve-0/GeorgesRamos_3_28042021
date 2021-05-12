@@ -25,18 +25,8 @@
         z-index: 2;
         left: 15px;
         top: 10px;
-
-        @media (min-width:$breakpoint-mobile-xl) {
-            @include taille(25px, 25px);
-            left: 15px;
-            top: 14px;
-        }
-
-        @media (min-width:$breakpoint-tablet) {
-            @include taille(30px, 30px);
-            left: 15px;
-            top: 15px;
-        }
+        @include btn-return($breakpoint-mobile-xl,25px,25px,15px,14px);
+        @include btn-return($breakpoint-tablet,30px, 30px,15px,15px);
     }
     & .navoff{
         @include flex-mix(center, center);
@@ -45,22 +35,16 @@
             @include flex-mix(space-between, center);
             width:100%;
         }
+        & img{
+            width: 100%;
+            @include logo-resp($breakpoint-desktop,80px,15%);
+        }
     }
 
     & img {
-        width: 25%;
-        @media (min-width:$breakpoint-mobile-xl) {
-            width: 30%;
-        }
-
-        @media (min-width:$breakpoint-tablet) {
-            width: 35%;
-        }
-
-        @media (min-width:$breakpoint-desktop) {
-            padding-left: 80px;
-            width: 15%;
-        }
+        width: 35%;
+        @include logo-resp($breakpoint-mobile-xl,0px,30%);
+        @include logo-resp($breakpoint-desktop,20px,15%);
     }
 
     & nav {
@@ -77,7 +61,7 @@
         color: $color-txt-dark;
         text-decoration: none;
         margin-right: 2em;
-        @include family('title');
+        @include family('title',1em);
         font-weight: 500;
 
         &:hover {

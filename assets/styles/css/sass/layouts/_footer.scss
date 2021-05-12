@@ -3,7 +3,7 @@ footer{
     background:$color-txt-dark;
     color: $color-txt-light;
     & h2{
-        @include family('title');
+        @include family('title',1.6em);
         font-weight: 500;
         margin: 0;
         letter-spacing: 1px;
@@ -11,7 +11,7 @@ footer{
     & ul{
         list-style: none;
         padding-left: 0;
-        font-size: .7em;
+        font-size: .8em;
     }
     & li{
         @include flex-mix(start,center);
